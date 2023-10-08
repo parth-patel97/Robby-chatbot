@@ -32,6 +32,7 @@ def merge_and_load_csv(files):
     return merged_df
 
 
+st.write("Make sure all csv files has same columns !")
 uploaded_files = st.sidebar.file_uploader(
     "upload", type="csv", accept_multiple_files=True)
 uploaded_file = merge_and_load_csv(uploaded_files)
